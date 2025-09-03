@@ -32,11 +32,11 @@ Colab 環境において必要なライブラリを `pip install` すること�
 ```
 
 ## ノートブック構成
-* **EDA.ipynb**
+* **EDA.ipynb**\
   データの可視化・基礎分析（EDA）を実施
-* **TRAIN.ipynb**
+* **TRAIN.ipynb**\
   特徴量の追加・モデルの学習（LightGBM / XGBoost / TabPFN）
-* **INFER.ipynb**
+* **INFER.ipynb**\
   学習済みモデルを用いた予測、testデータに対する推論、提出用ファイル作成
 
 ## 使用ライブラリ
