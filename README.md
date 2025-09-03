@@ -23,3 +23,27 @@
 * コンペでは限られた期間でどれだけ試行錯誤できるかが重要
 * モデル選定によって精度が大きく変わることを実感
 * TabPFNは小規模データに有効だが、実務利用には課題があると感じた
+
+## 環境構築
+本プロジェクトは **Google Colab** 上で実行しました。
+Colab 環境において必要なライブラリを `pip install` することで再現可能です。
+```
+!pip install pandas numpy scikit-learn lightgbm xgboost tabpfn matplotlib seaborn
+```
+
+## ノートブック構成
+* **EDA.ipynb**
+  データの可視化・基礎分析（EDA）を実施
+* **TRAIN.ipynb**
+  特徴量の追加・モデルの学習（LightGBM / XGBoost / TabPFN）
+* **INFER.ipynb**
+  学習済みモデルを用いた予測、testデータに対する推論、提出用ファイル作成
+
+## 使用ライブラリ
+* **pandas**：データ前処理
+* **numpy**：数値計算
+* **scikit-learn**：モデル評価、データ分割
+* **lightgbm**：勾配ブースティングモデル
+* **xgboost**：勾配ブースティングモデル
+* **tabpfn**：少量データ用モデル（Transformerベース）
+* **matplotlib / seaborn**：データ可視化
