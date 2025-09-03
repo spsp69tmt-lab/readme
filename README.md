@@ -25,7 +25,7 @@
 * TabPFNは小規模データに有効だが、実務利用には課題があると感じた
 
 ## 環境構築
-本プロジェクトは **Google Colab** 上で実行しました。
+本プロジェクトは **Google Colab** 上で実行しました。\
 Colab 環境において必要なライブラリを `pip install` することで再現可能です。
 ```
 !pip install pandas numpy scikit-learn lightgbm xgboost tabpfn matplotlib seaborn
